@@ -1,0 +1,69 @@
+body
+{
+	padding: 1%;
+}
+
+.crypto-info
+{
+	width: 98%;
+}
+
+.center-text
+{
+	text-align: center;
+}
+
+.crypto-name-info, .crypto-price-info, .crypto-market-cap-info, .crypto-24h-volume-info
+{
+	width: 100%;
+	overflow: hidden;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+.label
+{
+	width: 19%;
+	float: left;
+}
+
+.separator
+{
+	width: 1%;
+	float: left;
+}
+
+.crypto-price, .crypto-name, .crypto-market-cap, .crypto-24h-volume
+{
+	width: 80%;
+	float: left;
+}
+
+.choose-crypto
+{
+	width: 96%;
+	padding: 1%;
+	overflow: hidden;
+	background-color: #C0C0C0;
+}
+
+.check-crypto-btn
+{
+	width: 20%;
+}
+
+.crypto-dropdown
+{
+	width: 100%;
+}
+
+.dropdown-container, .button-container
+{
+	float: left;
+	width: 50%;
+}
+
+.no-margin
+{
+	margin: 0;
+}
