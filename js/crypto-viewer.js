@@ -1,13 +1,13 @@
 $(document).ready(function(){
 	$("button").click(function(){
-		var selectedCrypto = $("select option:selected").text();
-		var url = "https://api.coinmarketcap.com/v1/ticker/" + selectedCrypto + "/?convert=IDR";
+		var cryptoId = $("select option:selected").val();
+		var url = "https://api.coinmarketcap.com/v2/ticker/" + cryptoId + "/?convert=IDR";
 		
 		$.getJSON(url, function(data){
-			$(".crypto-name").text(data[0]["name"]);
-			$(".crypto-price").text("Rp. " + data[0]["price_idr"]);
-			$(".crypto-market-cap").text("Rp. " + data[0]["market_cap_idr"]);
-			$(".crypto-24h-volume").text("Rp. " + data[0]["24h_volume_idr"]);
+			$(".crypto-name").text(data["data"]["name"]);
+			$(".crypto-price").text("Rp. " + data["data"]["quotes"]["IDR"]["price"]);
+			$(".crypto-market-cap").text("Rp. " + data["data"]["quotes"]["IDR"]["market_cap"]);
+			$(".crypto-24h-volume").text("Rp. " + data["data"]["quotes"]["IDR"]["volume_24h"]);
 		});
 	});
 });
