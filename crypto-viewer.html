@@ -2,61 +2,61 @@
 <html>
 	<head>
 		<title>Welcome to Crypto Viewer</title>
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.css"/>
 		<link type="text/css" rel="stylesheet" href="css/style.css"/>
 		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
 		<script type="text/javascript" src="js/crypto-viewer.js"></script>
-		<meta charset="UTF-8"/>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	
 	<body>
-		<h3 class="center-text">Crypto Viewer</h3>
-		<hr>
+		<h3 class="page-header text-center">Crypto Viewer</h3>
 	
-		<div class="crypto-info">
-			<div class="crypto-name-info">
-				<label class="label">Name</label>
-				<label class="center-text separator"> : </label>
-				<h3 class="crypto-name no-margin"></h3>
+		<div class="crypto-info container-fluid">
+			<div class="crypto-name-info row">
+				<label class="col-xs-6"><h3>Name</h3></label>
+				<h3 class="col-xs-6 crypto-name"></h3>
 			</div>
 			
-			<div class="crypto-price-info">
-				<label class="label">Price</label>
-				<label class="center-text separator"> : </label>
-				<h3 class="crypto-price no-margin"></h3>
+			<div class="crypto-price-info row">
+				<label class="col-xs-6"><h3>Price</h3></label>
+				<h3 class="col-xs-6 crypto-price"></h3>
 			</div>
 			
-			<div class="crypto-market-cap-info">
-				<label class="label">Market Cap</label>
-				<label class="center-text separator"> : </label>
-				<h3 class="crypto-market-cap no-margin"></h3>
+			<div class="crypto-market-cap-info row">
+				<label class="col-xs-6"><h3>Market Cap</h3></label>
+				<h3 class="col-xs-6 crypto-market-cap"></h3>
 			</div>
 			
-			<div class="crypto-24h-volume-info">
-				<label class="label">Volume(24h)</label>
-				<label class="center-text separator"> : </label>
-				<h3 class="crypto-24h-volume no-margin"></h3>
+			<div class="crypto-24h-volume-info row">
+				<label class="col-xs-6"><h3>Volume (24h)</h3></label>
+				<h3 class="col-xs-6 crypto-24h-volume"></h3>
 			</div>
 		</div>
 		
-		<div class="choose-crypto">
-			<div class="dropdown-container">
-				<select class="crypto-dropdown">
-					<option value="1">Bitcoin</option>
-					<option value="1027">Ethereum</option>
-					<option value="2">Litecoin</option>
-					<option value="74">Dogecoin</option>
-					<option value="1455">Golem</option>
-					<option value="52">Ripple</option>
-					<option value="328">Monero</option>
-					<option value="131">Dash</option>
-					<option value="372">Bytecoin</option>
-					<option value="1042">Siacoin</option>
-					<option value="118">Reddcoin</option>
-				</select>
-			</div>
-			
-			<div class="button-container">
-				<button class="check-crypto-btn">Check Crypto</button>
+		<div class="choose-crypto container-fluid">
+			<div class="row">
+				<div class="col-xs-6">
+					<select class="crypto-dropdown form-control">
+						<option value="1">Bitcoin</option>
+						<option value="1027">Ethereum</option>
+						<option value="2">Litecoin</option>
+						<option value="74">Dogecoin</option>
+						<option value="1455">Golem</option>
+						<option value="52">Ripple</option>
+						<option value="328">Monero</option>
+						<option value="131">Dash</option>
+						<option value="372">Bytecoin</option>
+						<option value="1042">Siacoin</option>
+						<option value="118">Reddcoin</option>
+					</select>
+				</div>
+				
+				<div class="button-container col-xs-6">
+					<button class="check-crypto-btn btn btn-default pull-left" type="button">Check</button>
+				</div>
 			</div>
 		</div>
 	</body>

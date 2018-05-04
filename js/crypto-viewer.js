@@ -5,9 +5,9 @@ $(document).ready(function(){
 		
 		$.getJSON(url, function(data){
 			$(".crypto-name").text(data["data"]["name"]);
-			$(".crypto-price").text("Rp. " + data["data"]["quotes"]["IDR"]["price"]);
-			$(".crypto-market-cap").text("Rp. " + data["data"]["quotes"]["IDR"]["market_cap"]);
-			$(".crypto-24h-volume").text("Rp. " + data["data"]["quotes"]["IDR"]["volume_24h"]);
+			$(".crypto-price").text("Rp. " + data["data"]["quotes"]["IDR"]["price"].toLocaleString("id"));
+			$(".crypto-market-cap").text("Rp. " + data["data"]["quotes"]["IDR"]["market_cap"].toLocaleString("id"));
+			$(".crypto-24h-volume").text("Rp. " + data["data"]["quotes"]["IDR"]["volume_24h"].toLocaleString("id"));
 		});
 	});
 });
