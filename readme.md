@@ -2,6 +2,10 @@ Welcome to my simple crypto viewer web project. This project is built using HTML
 This project shows information regarding crypto such as name of the crypto, price, market cap, and 24h volume.
 Price, market cap, and 24h volume are displayed in IDR. 
 
+Changelog (May, 12th 2018)
+==================================
+1. Add new crypto (Gridcoin, Steem, Byteball Bytes, Curecoin)
+
 Changelog (May, 4th 2018)
 ==================================
 1. Using Bootstrap 3
