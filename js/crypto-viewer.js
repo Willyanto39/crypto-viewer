@@ -8,6 +8,8 @@ $(document).ready(function(){
 			$(".crypto-price").text("Rp. " + data["data"]["quotes"]["IDR"]["price"].toLocaleString("id"));
 			$(".crypto-market-cap").text("Rp. " + data["data"]["quotes"]["IDR"]["market_cap"].toLocaleString("id"));
 			$(".crypto-24h-volume").text("Rp. " + data["data"]["quotes"]["IDR"]["volume_24h"].toLocaleString("id"));
+			$(".circulating-supply").text(data["data"]["circulating_supply"].toLocaleString("id") + " " + data["data"]["symbol"]);
+			$(".total-supply").text(data["data"]["total_supply"].toLocaleString("id") + " " + data["data"]["symbol"]);
 		});
 	});
 });
