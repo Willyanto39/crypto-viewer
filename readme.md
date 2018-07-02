@@ -1,6 +1,10 @@
 Welcome to my simple crypto viewer web project. This project is built using HTML, CSS, Bootstrap, JS, and JQuery.
 This project shows information regarding crypto such as name of the crypto, price, market cap, and 24h volume.
-Price, market cap, and 24h volume are displayed in IDR. 
+Price, market cap, and 24h volume are displayed in IDR.
+
+Changelog (July 2, 2018)
+=================================
+1. Add DCC, IOTA, TRON, Cardano, and Bitcoin Cash
 
 Changelog (May 24, 2018)
 =================================
