@@ -1,8 +1,5 @@
 $(document).ready(function(){
 	$("button").click(function(){
-		//workaround for CORS issue
-		//var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-
 		var cryptoId = $("select option:selected").val();
 		var url = config.apiHost + "/api/v1/cryptoviewer";
 
