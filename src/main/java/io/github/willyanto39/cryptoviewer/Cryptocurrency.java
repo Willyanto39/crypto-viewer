@@ -10,18 +10,22 @@ class Cryptocurrency {
   private double circulatingSupply;
   private double totalSupply;
   private double marketCap;
-  
+
+  public Cryptocurrency() {
+    // no-op
+  }
+
   public Cryptocurrency(JsonNode cryptocurrencyData, JsonNode quoteData) {
     name = cryptocurrencyData.get("name").asText();
     symbol = cryptocurrencyData.get("symbol").asText();
     circulatingSupply = cryptocurrencyData.get("circulating_supply").asDouble();
     totalSupply = cryptocurrencyData.get("total_supply").asDouble();
-    
+
     price = quoteData.get("price").asDouble();
     volume24Hour = quoteData.get("volume_24h").asDouble();
     marketCap = quoteData.get("market_cap").asDouble();
   }
-  
+
   public String getName() {
     return name;
   }
