@@ -1,0 +1,16 @@
+services:
+  app:
+    environment:
+      API_KEY: ${API_KEY}
+      POSTGRE_USERNAME: ${POSTGRE_USERNAME}
+      POSTGRE_PASSWORD: ${POSTGRE_PASSWORD}
+      POSTGRE_URL: ${POSTGRE_URL}
+    build:
+      context: "."
+      #args:
+      #  API_KEY: ${API_KEY}
+      #  POSTGRE_USERNAME: ${POSTGRE_USERNAME}
+      #  POSTGRE_PASSWORD: ${POSTGRE_PASSWORD}
+      #  POSTGRE_URL: ${POSTGRE_URL}
+    ports:
+      - "8080:8080"
