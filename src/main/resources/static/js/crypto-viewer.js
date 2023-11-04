@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$("button").click(function(){
 		var cryptoId = $("select option:selected").val();
-		var url = config.apiHost + "/api/v1/cryptoviewer";
+		var url = window.location.protocol + "//" + window.location.host + "/api/v1/cryptoviewer";
 
 		$.ajax({
 			url : url,
@@ -15,7 +15,7 @@ $(document).ready(function(){
 			success: function(data) {
 				var responseData = data["data"];
 				var symbol = responseData["symbol"];
-				
+
 				$(".crypto-name").text(responseData["name"]);
 				$(".crypto-price").text("Rp. " + responseData["price"].toLocaleString("id"));
 				$(".crypto-market-cap").text("Rp. " + responseData["marketCap"].toLocaleString("id"));
