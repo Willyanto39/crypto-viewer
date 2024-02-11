@@ -7,5 +7,21 @@ services:
       POSTGRE_URL: ${POSTGRE_URL}
     build:
       context: "."
+    depends_on:
+      - database
+    links:
+      - database
     ports:
       - "8080:8080"
+  database:
+    environment:
+      POSTGRES_USER: ${POSTGRE_USERNAME}
+      POSTGRES_PASSWORD: ${POSTGRE_PASSWORD}
+      POSTGRES_DB: cryptoviewer
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    image: postgres:16.1-bookworm
+    ports:
+      - "5432:5432"
+volumes:
+  db_data:
